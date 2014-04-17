@@ -188,7 +188,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Models\ContactUser.cs" />
     <Compile Include="Models\IdentityRole.cs" />
-    <Compile Include="Database\Identity\ContactUserStore.cs" />
+    <Compile Include="Identity\ContactUserStore.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -197,8 +197,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Database\Sql\Identity.sql" />
-    <EmbeddedResource Include="Database\Sql\Test.sql" />
+    <EmbeddedResource Include="Database\Identity.sql" />
+    <EmbeddedResource Include="Database\Test.sql" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />

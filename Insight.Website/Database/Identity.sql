@@ -407,12 +407,8 @@ CREATE PROCEDURE [dbo].GetClaims
 )
 AS
 BEGIN
-	--SELECT 'http://shakethecounter.com/identity/claims/saleschannel' ClaimType, [Name] ClaimValue FROM [dbo].[Contact] INNER JOIN [dbo].[SalesChannel] ON [SalesChannel].[ID] = [Contact].[SalesChannelID] WHERE [Contact].[ID] = @Id
-	--UNION
-	--SELECT 'http://shakethecounter.com/identity/claims/partner' ClaimType, [Name] ClaimValue FROM [dbo].[Partner] INNER JOIN [dbo].[PartnerContact] ON [Partner].[ID] = [PartnerContact].[PartnerID] WHERE [PartnerContact].[ContactID] = @Id
-	
 	-- dummy
-	SELECT 'http://shakethecounter.com/identity/claims/saleschannel' ClaimType, '1' ClaimValue
+	SELECT 'urn:playground:claim' ClaimType, '1' ClaimValue
 END
 GO
 
